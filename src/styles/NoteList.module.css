@@ -1,11 +1,9 @@
 .card {
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 16px;
-    margin: 8px;
-    transition: box-shadow 0.2s;
+    transition: translate ease-in-out 100ms, box-shadow ease-in-out 100ms;
 }
 
-.card:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+.card:hover,
+.card:focus {
+    translate: 0 -5px;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, .2);
 }
